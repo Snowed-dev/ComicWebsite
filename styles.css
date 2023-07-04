@@ -1,6 +1,27 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
 .slider-container {
-    position: relative;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Use viewport height to fill up the window */
+}
+
+.slider-container::before {
+  content: "";
+  background-image: url('comic1.jpeg'); /* Replace with your image filename */
+  background-size: 100% 100%; /* Fill up the container */
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
   
   #prev-button,
   #next-button {
@@ -14,8 +35,11 @@
     cursor: pointer;
   }
   
+
+
   #prev-button {
     left: 10px;
+    
   }
   
   #next-button {
