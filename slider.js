@@ -3,7 +3,7 @@ const prevButton = document.getElementById("prev-button");
 const nextButton = document.getElementById("next-button");
 
 // Array of comic images
-const images = ["comic1.jpg", "comic2.jpg"];
+const images = ["comic1.jpeg", "comic2.jpeg"];
 let currentIndex = 0;
 
 // Function to update the image source

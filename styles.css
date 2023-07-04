@@ -12,7 +12,7 @@ body, html {
 
 .slider-container::before {
   content: "";
-  background-image: url('comic1.jpeg'); /* Replace with your image filename */
+  /* background-image: url('comic1.jpeg'); Replace with your image filename */
   background-size: 100% 100%; /* Fill up the container */
   background-position: center;
   position: fixed;
@@ -27,7 +27,7 @@ body, html {
   #next-button {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
     padding: 10px 15px;
     font-size: 16px;
     background-color: #ddd;
