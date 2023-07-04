@@ -1,10 +1,9 @@
-// Get references to the HTML elements
-const imageElement = document.getElementById('comic-image');
-const prevButton = document.getElementById('prev-button');
-const nextButton = document.getElementById('next-button');
+const imageElement = document.getElementById("comic-image");
+const prevButton = document.getElementById("prev-button");
+const nextButton = document.getElementById("next-button");
 
 // Array of comic images
-const images = ['comic1.jpeg', 'comic2.jpeg'];
+const images = ["comic1.jpg", "comic2.jpg"];
 let currentIndex = 0;
 
 // Function to update the image source
@@ -13,13 +12,15 @@ function updateImage() {
 }
 
 // Event listeners for button clicks
-prevButton.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
+prevButton.addEventListener("click", () => {
+  if (currentIndex === 0) return;
+  currentIndex--;
   updateImage();
 });
 
-nextButton.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % images.length;
+nextButton.addEventListener("click", () => {
+  if (currentIndex === images.length - 1) return;
+  currentIndex++;
   updateImage();
 });
 
