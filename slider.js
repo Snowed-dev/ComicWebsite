@@ -1,7 +1,7 @@
 const imageElement = document.getElementById("comic-image");
 const prevButton = document.getElementById("prev-button");
 const nextButton = document.getElementById("next-button");
-
+const backButton = document.getElementById("back-button")
 // Array of comic images
 const images = ["comic1.jpeg", "comic2.jpeg"];
 let currentIndex = 0;
@@ -23,6 +23,9 @@ nextButton.addEventListener("click", () => {
   currentIndex++;
   updateImage();
 });
-
+backButton.addEventListener("click", () => {
+    window.location.href = "index.html";
+});
+  
 // Initial image update
 updateImage();
