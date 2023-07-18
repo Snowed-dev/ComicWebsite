@@ -1,0 +1,22 @@
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 1px solid black;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.custom-link {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    text-decoration: none;
+}
